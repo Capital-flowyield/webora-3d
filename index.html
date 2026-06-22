@@ -1,464 +1,325 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Webora | Siti Web e Soluzioni Digitali</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Webora realizza siti web, applicazioni e soluzioni digitali su misura per attività locali, professionisti e startup." />
+  <title>Webora | Siti Web 3D e Soluzioni Digitali</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="site-header__container">
-      <a href="#" class="site-header__logo">Webora</a>
+  <div class="site-noise" aria-hidden="true"></div>
+  <canvas id="particle-canvas" class="particle-canvas" aria-hidden="true"></canvas>
 
-      <nav class="site-header__nav">
+  <header class="site-header" data-glass>
+    <div class="site-header__container">
+      <a href="#" class="site-header__logo" aria-label="Webora home">
+        <span class="site-header__mark">W</span>
+        <span>Webora</span>
+      </a>
+
+      <nav class="site-header__nav" aria-label="Navigazione principale">
         <ul class="site-header__menu">
-          <li class="site-header__menu-item">
-            <a href="#servizi" class="site-header__menu-link">Servizi</a>
-          </li>
-          <li class="site-header__menu-item">
-            <a href="#progetti" class="site-header__menu-link">Progetti</a>
-          </li>
-          <li class="site-header__menu-item">
-            <a href="#processo" class="site-header__menu-link">Processo</a>
-          </li>
-          <li class="site-header__menu-item">
-            <a href="#chi-sono" class="site-header__menu-link">Chi Sono</a>
-          </li>
-          <li class="site-header__menu-item">
-            <a href="#contatti" class="site-header__menu-link">Contatti</a>
-          </li>
+          <li><a href="#servizi" class="site-header__menu-link">Servizi</a></li>
+          <li><a href="#progetti" class="site-header__menu-link">Progetti</a></li>
+          <li><a href="#processo" class="site-header__menu-link">Processo</a></li>
+          <li><a href="#chi-sono" class="site-header__menu-link">Chi Sono</a></li>
+          <li><a href="#contatti" class="site-header__menu-link">Contatti</a></li>
         </ul>
       </nav>
 
-      <a href="https://wa.me/393491954793?text=Ciao%20vorrei%20avere%20informazioni" class="site-header__cta">Scrivimi su WhatsApp</a>
+      <a href="https://wa.me/393491954793?text=Ciao%20vorrei%20avere%20informazioni" class="site-header__cta" target="_blank" rel="noopener noreferrer">WhatsApp</a>
     </div>
   </header>
 
   <main class="site-main">
-    <section class="hero">
-  <div class="hero__container">
-    <div class="hero__content">
-      <p class="text-placeholder">Sviluppatore Freelance • Siti Web • Applicazioni • Soluzioni Digitali</p>
+    <section class="hero" id="home">
+      <div class="hero__ambient" aria-hidden="true"></div>
+      <div class="hero__container">
+        <div class="hero__content">
+          <p class="hero__eyebrow reveal reveal--fade">Sviluppatore Freelance • Siti Web • Applicazioni • Soluzioni Digitali</p>
 
-      <h1 class="text-placeholder">
-        Siti web e soluzioni digitali progettati per aiutare la tua attività a crescere online.
-      </h1>
+          <h1 class="hero__title reveal reveal--up">
+            Siti web e soluzioni digitali progettati per aiutare la tua attività a <span>crescere online.</span>
+          </h1>
 
-      <p class="text-placeholder">
-       Realizzo siti web, applicazioni e strumenti digitali per aziende, ristoranti,
-       bar, centri estetici, palestre, professionisti e startup che vogliono
-       <strong>presentarsi meglio online</strong>, <strong>attirare più clienti</strong>
-       e offrire un’esperienza più professionale.
-      </p>
-
-      <p class="text-placeholder">
-       Non creo solo pagine web: progetto soluzioni pensate per
-       <strong>risolvere problemi concreti</strong>, migliorare la comunicazione,
-       <strong>semplificare il lavoro</strong> e rendere la tua attività più efficace
-       anche online.
-      </p>
-
-      <div class="hero__actions">
-        <a
-          href="https://wa.me/393491954793?text=Ciao%20vorrei%20avere%20informazioni"
-          class="hero__button"
-        >
-          Scrivimi su WhatsApp
-        </a>
-
-        <a href="#progetti" class="hero__button">
-          Guarda i progetti
-        </a>
-      </div>
-    </div>
-
-    
-</section>
-
-<section class="problems">
-    <div class="problems__container">
-    <div class="problems__header reveal reveal--up">
-      <h2 class="text-placeholder">
-        <span>La tecnologia è utile solo quando</span>
-        <span>risolve un <strong>problema reale.</strong></span>
-      </h2>
-
-      <p class="text-placeholder">
-        Molte aziende possiedono già strumenti digitali, ma spesso non sono progettati
-        per supportare davvero la crescita e le esigenze dell'attività.
-      </p>
-    </div>
-
-    <div class="problems__grid">
-      <article class="card problem-card reveal reveal--from-left">
-        <h3>Presenza online poco efficace</h3>
-        <p>
-          Un sito web datato o poco curato può trasmettere un'immagine non all'altezza
-          del valore reale dell'attività. Oggi la presenza online rappresenta il
-          <strong>primo punto di contatto</strong> tra un'azienda e i suoi
-          <strong>potenziali clienti</strong>.
-        </p>
-      </article>
-
-      <article class="card problem-card reveal reveal--from-bottom">
-        <h3>Esperienza utente non ottimizzata</h3>
-        <p>
-          Se un sito è lento, poco intuitivo o difficile da utilizzare da smartphone,
-          molte opportunità possono andare perse prima ancora che il cliente decida di
-          <strong>restare sul sito</strong> e <strong>contattarti</strong>.
-        </p>
-      </article>
-
-      <article class="card problem-card reveal reveal--from-right">
-        <h3>Strumenti non adatti alle esigenze dell'attività</h3>
-        <p>
-          Ogni azienda ha processi e necessità differenti. Utilizzare soluzioni generiche
-          non sempre è sufficiente. In molti casi servono
-          <strong>strumenti personalizzati</strong> capaci di adattarsi al
-          <strong>modo reale di lavorare</strong>.
-        </p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="servizi" class="services">
-  <div class="services__container">
-    <div class="services__header reveal service-reveal service-reveal--header">
-      <h2 class="text-placeholder">
-        Soluzioni digitali pensate per far lavorare meglio la tua attività.
-      </h2>
-
-      <p class="text-placeholder">
-        Che tu abbia bisogno di un sito professionale, di migliorare quello esistente
-        o di creare uno strumento personalizzato, l'obiettivo resta lo stesso:
-        rendere la tua attività più chiara, efficiente e facile da gestire e da scegliere.
-      </p>
-    </div>
-
-    <div class="services__layout">
-      <article class="service-card service-card--featured reveal service-reveal service-reveal--featured">
-        <span class="service-card__label">Presenza online</span>
-
-        <div class="service-card__content">
-          <h3>Siti Web Professionali</h3>
-
-          <p>
-            Progetto e sviluppo siti web moderni, responsive e curati nei dettagli,
-            pensati per presentare la tua attività in modo professionale e aiutare
-            i clienti a capire subito chi sei, cosa offri e perché sceglierti.
+          <p class="hero__lead reveal reveal--up">
+            Realizzo siti web, applicazioni e strumenti digitali per aziende, ristoranti, bar, centri estetici, palestre, professionisti e startup che vogliono <strong>presentarsi meglio online</strong>, <strong>attirare più clienti</strong> e offrire un’esperienza più professionale.
           </p>
 
-          <ul class="service-card__list">
-            <li>
-              <span>✓</span>
-              Design moderno e responsive
-            </li>
+          <p class="hero__lead hero__lead--secondary reveal reveal--up">
+            Non creo solo pagine web: progetto soluzioni pensate per <strong>risolvere problemi concreti</strong>, migliorare la comunicazione, <strong>semplificare il lavoro</strong> e rendere la tua attività più efficace anche online.
+          </p>
 
-            <li>
-              <span>✓</span>
-              Struttura chiara e orientata al contatto
-            </li>
+          <div class="hero__actions reveal reveal--up">
+            <a href="https://wa.me/393491954793?text=Ciao%20vorrei%20avere%20informazioni" class="button button--primary" target="_blank" rel="noopener noreferrer">Scrivimi su WhatsApp</a>
+            <a href="#progetti" class="button button--secondary">Guarda i progetti</a>
+          </div>
 
-            <li>
-              <span>✓</span>
-              Esperienza ottimizzata anche da smartphone
-            </li>
-          </ul>
+          <dl class="hero__stats reveal reveal--up" aria-label="Punti di forza Webora">
+            <div>
+              <dt>3D</dt>
+              <dd>Esperienze immersive</dd>
+            </div>
+            <div>
+              <dt>UX</dt>
+              <dd>Percorsi chiari</dd>
+            </div>
+            <div>
+              <dt>Fast</dt>
+              <dd>Codice leggero</dd>
+            </div>
+          </dl>
         </div>
 
-        <a
-          href="https://wa.me/393491954793?text=Ciao%20vorrei%20avere%20informazioni"
-          class="service-card__button"
-        >
-          Parliamo del tuo sito
-        </a>
-      </article>
-
-      <div class="services__side">
-        <article class="service-card service-card--compact reveal service-reveal service-reveal--side service-reveal--side-1">
-          <span class="service-card__label">Miglioramento</span>
-
-          <div class="service-card__content">
-            <h3>Restyling e Miglioramento di Siti Esistenti</h3>
-
-            <p>
-              Analizzo siti già online per migliorarne struttura, design, usabilità
-              e comunicazione, correggendo ciò che limita l'efficacia del progetto.
-            </p>
+        <div class="hero__visual reveal reveal--scale" aria-label="Visual 3D con fiore Webora">
+          <div class="webora-scene-shell" data-tilt>
+            <canvas id="webora-flower-scene" class="webora-scene" aria-hidden="true"></canvas>
+            <div class="flower-fallback" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="scene-badge scene-badge--top">
+              <span>3D Website</span>
+              <strong>Fiore interattivo</strong>
+            </div>
+            <div class="scene-badge scene-badge--bottom">
+              <span>Focus</span>
+              <strong>Design che guida al contatto</strong>
+            </div>
+            <div class="scene-orbit scene-orbit--one"></div>
+            <div class="scene-orbit scene-orbit--two"></div>
           </div>
-        </article>
-
-        <article class="service-card service-card--compact reveal service-reveal service-reveal--side service-reveal--side-2">
-          <span class="service-card__label">Soluzioni su misura</span>
-
-          <div class="service-card__content">
-            <h3>Applicazioni e Soluzioni Personalizzate</h3>
-
-            <p>
-              Sviluppo strumenti digitali e applicazioni web pensate per semplificare
-              processi, migliorare l'organizzazione e supportare il lavoro quotidiano.
-            </p>
-          </div>
-        </article>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
 
-    <section id="progetti" class="projects">
-      <div class="projects__container">
-        <div class="projects__header">
-          <h2 class="text-placeholder">Progetti selezionati.</h2>
-          <p class="text-placeholder">Una raccolta di progetti sviluppati per migliorare l'esperienza utente, la presenza online e l'efficacia degli strumenti digitali.</p>
+      <a href="#servizi" class="scroll-cue" aria-label="Scorri alla sezione servizi">
+        <span></span>
+      </a>
+    </section>
+
+    <section class="problems section-panel">
+      <div class="section-container">
+        <div class="section-header section-header--center reveal reveal--up">
+          <p class="section-kicker">Perché migliorare</p>
+          <h2>
+            La tecnologia è utile solo quando risolve un <strong>problema reale.</strong>
+          </h2>
+          <p>
+            Molte aziende possiedono già strumenti digitali, ma spesso non sono progettati per supportare davvero la crescita e le esigenze dell'attività.
+          </p>
         </div>
+
+        <div class="cards-grid cards-grid--three">
+          <article class="glass-card problem-card reveal reveal--from-left" data-tilt>
+            <span class="card-number">01</span>
+            <h3>Presenza online poco efficace</h3>
+            <p>Un sito web datato o poco curato può trasmettere un'immagine non all'altezza del valore reale dell'attività. Oggi la presenza online rappresenta il <strong>primo punto di contatto</strong> tra un'azienda e i suoi <strong>potenziali clienti</strong>.</p>
+          </article>
+
+          <article class="glass-card problem-card reveal reveal--up" data-tilt>
+            <span class="card-number">02</span>
+            <h3>Esperienza utente non ottimizzata</h3>
+            <p>Se un sito è lento, poco intuitivo o difficile da utilizzare da smartphone, molte opportunità possono andare perse prima ancora che il cliente decida di <strong>restare sul sito</strong> e <strong>contattarti</strong>.</p>
+          </article>
+
+          <article class="glass-card problem-card reveal reveal--from-right" data-tilt>
+            <span class="card-number">03</span>
+            <h3>Strumenti non adatti alle esigenze dell'attività</h3>
+            <p>Ogni azienda ha processi e necessità differenti. Utilizzare soluzioni generiche non sempre è sufficiente. In molti casi servono <strong>strumenti personalizzati</strong> capaci di adattarsi al <strong>modo reale di lavorare</strong>.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="servizi" class="services">
+      <div class="section-container">
+        <div class="section-header reveal reveal--up">
+          <p class="section-kicker">Servizi</p>
+          <h2>Soluzioni digitali pensate per far lavorare meglio la tua attività.</h2>
+          <p>Che tu abbia bisogno di un sito professionale, di migliorare quello esistente o di creare uno strumento personalizzato, l'obiettivo resta lo stesso: rendere la tua attività più chiara, efficiente e facile da gestire e da scegliere.</p>
+        </div>
+
+        <div class="services__layout">
+          <article class="service-card service-card--featured reveal reveal--scale" data-tilt>
+            <span class="service-card__label">Presenza online</span>
+            <div class="service-card__content">
+              <h3>Siti Web Professionali</h3>
+              <p>Progetto e sviluppo siti web moderni, responsive e curati nei dettagli, pensati per presentare la tua attività in modo professionale e aiutare i clienti a capire subito chi sei, cosa offri e perché sceglierti.</p>
+              <ul class="check-list">
+                <li>Design moderno e responsive</li>
+                <li>Struttura chiara e orientata al contatto</li>
+                <li>Esperienza ottimizzata anche da smartphone</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/393491954793?text=Ciao%20vorrei%20avere%20informazioni" class="button button--primary" target="_blank" rel="noopener noreferrer">Parliamo del tuo sito</a>
+          </article>
+
+          <div class="services__side">
+            <article class="service-card reveal reveal--from-right" data-tilt>
+              <span class="service-card__label">Miglioramento</span>
+              <div class="service-card__content">
+                <h3>Restyling e Miglioramento di Siti Esistenti</h3>
+                <p>Analizzo siti già online per migliorarne struttura, design, usabilità e comunicazione, correggendo ciò che limita l'efficacia del progetto.</p>
+              </div>
+            </article>
+
+            <article class="service-card reveal reveal--from-right" data-tilt>
+              <span class="service-card__label">Soluzioni su misura</span>
+              <div class="service-card__content">
+                <h3>Applicazioni e Soluzioni Personalizzate</h3>
+                <p>Sviluppo strumenti digitali e applicazioni web pensate per semplificare processi, migliorare l'organizzazione e supportare il lavoro quotidiano.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="progetti" class="projects section-panel">
+      <div class="section-container">
+        <div class="section-header reveal reveal--up">
+          <p class="section-kicker">Portfolio</p>
+          <h2>Progetti selezionati.</h2>
+          <p>Una raccolta di progetti sviluppati per migliorare l'esperienza utente, la presenza online e l'efficacia degli strumenti digitali.</p>
+        </div>
+
         <div class="projects__grid">
-          <article class="project-card reveal project-reveal project-reveal--one">
-            <div class="project-card__media">
-  <img
-    src="./IMMAGINI/tabina.jpg"
-    alt="Anteprima del progetto Locanda Tabina"
-    class="project-card__image"
-  >
-  </div>
+          <article class="project-card reveal reveal--up" data-tilt>
+            <a href="locanda-tabina.html" class="project-card__media" aria-label="Apri progetto Locanda Tabina">
+              <img src="./IMMAGINI/tabina.jpg" alt="Anteprima del progetto Locanda Tabina" class="project-card__image" loading="lazy" />
+            </a>
+            <div class="project-card__body">
+              <span class="project-card__tag">Ristorante • UX/UI</span>
+              <h3>Locanda Tabina</h3>
+              <p>Ho riprogettato la <strong>struttura visiva e testuale</strong> per creare un’esperienza più chiara, professionale e <span>orientata alla conversione</span>, valorizzando identità del locale e punti di forza.</p>
+              <p class="tech-line">HTML • CSS • JavaScript • Responsive Design • UX/UI</p>
+            </div>
+            <div class="project-card__actions">
+              <a href="locanda-tabina.html" class="button button--secondary">Visualizza Progetto</a>
+              <a href="https://github.com/Capital-flowyield/locanda-tabina-website" class="button button--ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
 
-  <h3 class="text-placeholder">Locanda Tabina</h3>
+          <article class="project-card reveal reveal--up" data-tilt>
+            <a href="la-femme.html" class="project-card__media" aria-label="Apri progetto La Femme">
+              <img src="./IMMAGINI/la-femme.png" alt="Anteprima del progetto La Femme" class="project-card__image" loading="lazy" />
+            </a>
+            <div class="project-card__body">
+              <span class="project-card__tag">Beauty • Brand</span>
+              <h3>La Femme</h3>
+              <p>Ho ripensato la struttura per creare una presenza online più elegante, ordinata e coerente, guidando l’utente verso una navigazione più <strong>semplice e professionale</strong>.</p>
+              <p class="tech-line">HTML • CSS • JavaScript • Responsive Design • UX/UI</p>
+            </div>
+            <div class="project-card__actions">
+              <a href="la-femme.html" class="button button--secondary">Visualizza Progetto</a>
+              <a href="https://github.com/Capital-flowyield/la-femme" class="button button--ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
 
-  <p class="text-placeholder">
-  Il sito precedente risultava <strong>poco ordinato</strong> e non guidava l’utente
-  in modo chiaro verso le informazioni più importanti, rendendo meno efficace
-  il percorso verso il contatto o la prenotazione.
-</p>
-
-<p class="text-placeholder">
-  Ho riprogettato la <strong>struttura visiva e testuale</strong> per creare
-  un’esperienza più chiara, professionale e
-  <span class="project-card__underline">orientata alla conversione</span>,
-  valorizzando meglio l’identità del locale e i suoi punti di forza.
-</p>
-
-<p class="text-placeholder">
-  HTML • CSS • JavaScript • Responsive Design • UX/UI
-</p>
-
-  <a href="locanda-tabina.html" class="project-card__button">
-    Visualizza Progetto
-  </a>
-
-  <a
-    href="https://github.com/Capital-flowyield/locanda-tabina-website"
-    class="project-card__button"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    GitHub
-  </a>
-</article>
-
-
-          <article class="project-card reveal project-reveal project-reveal--two">
-  <div class="project-card__media">
-    <img
-      src="./IMMAGINI/la-femme.png"
-      alt="Anteprima del progetto La Femme"
-      class="project-card__image"
-    >
-  </div>
-
-  <h3 class="text-placeholder">La Femme</h3>
-
-  <p class="text-placeholder">
-    Il sito precedente non valorizzava abbastanza l’identità dell’attività e rendeva
-    poco immediata la comprensione dei <strong>servizi offerti</strong>, del valore
-    del brand e del percorso verso il <span class="project-card__underline">contatto</span>.
-  </p>
-
-  <p class="text-placeholder">
-    Ho ripensato la struttura per creare una presenza online più elegante, ordinata
-    e coerente, mettendo in evidenza le informazioni essenziali e guidando l’utente
-    verso una navigazione più <strong>semplice e professionale</strong>.
-  </p>
-
-  <p class="text-placeholder">
-    HTML • CSS • JavaScript • Responsive Design • UX/UI
-  </p>
-
-  <a href="la-femme.html" class="project-card__button">
-    Visualizza Progetto
-  </a>
-
-  <a
-    href="https://github.com/Capital-flowyield/la-femme"
-    class="project-card__button"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    GitHub
-  </a>
-</article>
-
-
-<article class="project-card reveal project-reveal project-reveal--three">
-  <div class="project-card__media">
-    <img
-      src="./IMMAGINI/verdepro.png"
-      alt="Anteprima del progetto VerdePro"
-      class="project-card__image"
-    >
-  </div>
-
-  <h3 class="text-placeholder">VerdePro</h3>
-
-  <p class="text-placeholder">
-    Progetto creato da zero per un’attività di giardinaggio, con l’obiettivo di presentare
-    in modo chiaro i <strong>servizi principali</strong> e rendere più semplice la richiesta
-    di un <span class="project-card__underline">preventivo</span>.
-  </p>
-
-  <p class="text-placeholder">
-    Ho sviluppato una struttura pensata per guidare l’utente tra manutenzione, potature,
-    sfalcio e cura del verde, mettendo in evidenza le informazioni essenziali e le call to action
-    verso WhatsApp.
-  </p>
-
-  <p class="text-placeholder">
-    HTML • CSS • JavaScript • Responsive Design • UX/UI
-  </p>
-
-  <a href="verdepro.html" class="project-card__button">
-    Visualizza Progetto
-  </a>
-
-  <a
-    href="https://github.com/Capital-flowyield/verdepro-site"
-    class="project-card__button"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    GitHub
-  </a>
-</article>
-
-  <section id="processo" class="process">
-  <div class="process__container">
-    <div class="process__header reveal process-reveal process-reveal--header">
-      <h2 class="text-placeholder">
-        Un processo <strong>semplice e trasparente.</strong>
-      </h2>
-    </div>
-
-    <div class="process__timeline">
-      <article class="process__step reveal process-reveal process-reveal--step">
-        <span class="process__number">01</span>
-
-        <div class="process__content">
-          <h3>Analisi</h3>
-          <p>
-            Ascolto le esigenze dell'attività, identifico gli obiettivi e comprendo
-            il problema reale da risolvere.
-          </p>
+          <article class="project-card reveal reveal--up" data-tilt>
+            <a href="verdepro.html" class="project-card__media" aria-label="Apri progetto VerdePro">
+              <img src="./IMMAGINI/verdepro.png" alt="Anteprima del progetto VerdePro" class="project-card__image" loading="lazy" />
+            </a>
+            <div class="project-card__body">
+              <span class="project-card__tag">Giardinaggio • Lead</span>
+              <h3>VerdePro</h3>
+              <p>Progetto creato da zero per presentare in modo chiaro i <strong>servizi principali</strong> e rendere più semplice la richiesta di un <span>preventivo</span> tramite CTA dirette.</p>
+              <p class="tech-line">HTML • CSS • JavaScript • Responsive Design • UX/UI</p>
+            </div>
+            <div class="project-card__actions">
+              <a href="verdepro.html" class="button button--secondary">Visualizza Progetto</a>
+              <a href="https://github.com/Capital-flowyield/verdepro-site" class="button button--ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
         </div>
-      </article>
+      </div>
+    </section>
 
-      <article class="process__step reveal process-reveal process-reveal--step">
-        <span class="process__number">02</span>
-
-        <div class="process__content">
-          <h3>Pianificazione</h3>
-          <p>
-            Definisco la soluzione più adatta, organizzo la struttura del progetto
-            e stabilisco le funzionalità davvero necessarie.
-          </p>
+    <section id="processo" class="process">
+      <div class="section-container">
+        <div class="section-header section-header--center reveal reveal--up">
+          <p class="section-kicker">Metodo</p>
+          <h2>Un processo <strong>semplice e trasparente.</strong></h2>
         </div>
-      </article>
 
-      <article class="process__step reveal process-reveal process-reveal--step">
-        <span class="process__number">03</span>
-
-        <div class="process__content">
-          <h3>Sviluppo</h3>
-          <p>
-            Realizzo il progetto prestando attenzione a esperienza utente,
-            prestazioni, responsive design e qualità del codice.
-          </p>
+        <div class="process__timeline">
+          <article class="process__step reveal reveal--up" data-tilt>
+            <span class="process__number">01</span>
+            <div>
+              <h3>Analisi</h3>
+              <p>Ascolto le esigenze dell'attività, identifico gli obiettivi e comprendo il problema reale da risolvere.</p>
+            </div>
+          </article>
+          <article class="process__step reveal reveal--up" data-tilt>
+            <span class="process__number">02</span>
+            <div>
+              <h3>Pianificazione</h3>
+              <p>Definisco la soluzione più adatta, organizzo la struttura del progetto e stabilisco le funzionalità davvero necessarie.</p>
+            </div>
+          </article>
+          <article class="process__step reveal reveal--up" data-tilt>
+            <span class="process__number">03</span>
+            <div>
+              <h3>Sviluppo</h3>
+              <p>Realizzo il progetto prestando attenzione a esperienza utente, prestazioni, responsive design e qualità del codice.</p>
+            </div>
+          </article>
+          <article class="process__step reveal reveal--up" data-tilt>
+            <span class="process__number">04</span>
+            <div>
+              <h3>Consegna e miglioramento</h3>
+              <p>Dopo il rilascio raccolgo feedback e valuto eventuali miglioramenti, così la soluzione continua a rispondere alle esigenze dell'attività.</p>
+            </div>
+          </article>
         </div>
-      </article>
+      </div>
+    </section>
 
-      <article class="process__step reveal process-reveal process-reveal--step">
-        <span class="process__number">04</span>
-
-        <div class="process__content">
-          <h3>Consegna e miglioramento</h3>
-          <p>
-            Dopo il rilascio raccolgo feedback e valuto eventuali miglioramenti,
-            così la soluzione continua a rispondere alle esigenze dell'attività.
-          </p>
+    <section id="chi-sono" class="about section-panel">
+      <div class="section-container about__container">
+        <div class="about__content reveal reveal--from-left">
+          <p class="section-kicker">Chi sono</p>
+          <h2>Dietro ogni progetto c'è una persona.</h2>
+          <p>Lavorare con me significa avere un riferimento <strong>diretto</strong>, <strong>attento</strong> e presente in ogni fase del progetto. Ascolto le esigenze della tua attività, trasformo gli obiettivi in una soluzione concreta e sviluppo strumenti digitali pensati per essere <strong>utili</strong>, chiari e facili da usare.</p>
         </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="chi-sono" class="about">
-  <div class="about__container">
-    <div class="about__content reveal about-reveal about-reveal--content">
-      <h2>Dietro ogni progetto c'è una persona.</h2>
-
-      <p>
-        Lavorare con me significa avere un riferimento <strong>diretto</strong>,
-        <strong>attento</strong> e presente in ogni fase del progetto. Ascolto le
-        esigenze della tua attività, trasformo gli obiettivi in una soluzione concreta
-        e sviluppo strumenti digitali pensati per essere <strong>utili</strong>,
-        chiari e facili da usare.
-      </p>
-
-      <ul class="about__list">
-        <li class="about__item about__item--left reveal about-reveal about-reveal--item-left">
-          <span class="about__check">✓</span>
-          <div class="about__item-content">
-            <h3>Attenzione ai dettagli</h3>
-            <p>
-              Ogni scelta, dal design alla struttura del sito, viene curata per
-              trasmettere professionalità e rendere l’esperienza più semplice per i tuoi clienti.
-            </p>
-          </div>
-        </li>
-
-        <li class="about__item about__item--right reveal about-reveal about-reveal--item-right">
-          <span class="about__check">✓</span>
-          <div class="about__item-content">
-            <h3>Soluzioni personalizzate</h3>
-            <p>
-              Non parto da soluzioni standard: progetto siti e strumenti digitali in base
-              alle reali necessità della tua attività.
-            </p>
-          </div>
-        </li>
-
-        <li class="about__item about__item--left reveal about-reveal about-reveal--item-left">
-          <span class="about__check">✓</span>
-          <div class="about__item-content">
-            <h3>Supporto continuo</h3>
-            <p>
-              Dopo la consegna resto disponibile per miglioramenti, aggiornamenti e
-              ottimizzazioni, così il progetto può crescere insieme alla tua attività.
-            </p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
+        <div class="about__list">
+          <article class="about__item reveal reveal--from-right" data-tilt>
+            <span>✓</span>
+            <div>
+              <h3>Attenzione ai dettagli</h3>
+              <p>Ogni scelta, dal design alla struttura del sito, viene curata per trasmettere professionalità e rendere l’esperienza più semplice per i tuoi clienti.</p>
+            </div>
+          </article>
+          <article class="about__item reveal reveal--from-right" data-tilt>
+            <span>✓</span>
+            <div>
+              <h3>Soluzioni personalizzate</h3>
+              <p>Non parto da soluzioni standard: progetto siti e strumenti digitali in base alle reali necessità della tua attività.</p>
+            </div>
+          </article>
+          <article class="about__item reveal reveal--from-right" data-tilt>
+            <span>✓</span>
+            <div>
+              <h3>Supporto continuo</h3>
+              <p>Dopo la consegna resto disponibile per miglioramenti, aggiornamenti e ottimizzazioni, così il progetto può crescere insieme alla tua attività.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
     <section id="contatti" class="final-cta">
-      <div class="final-cta__container">
-        <h2 class="text-placeholder">
-        <span>Hai un progetto, un'idea o</span>
-        <span>un problema da risolvere?</span>
-        </h2>
-        <p class="text-placeholder">Raccontami la tua situazione e vediamo insieme quale soluzione può essere più adatta alle esigenze della tua attività.</p>
-        <a href="https://wa.me/393491954793?text=Ciao%20vorrei%20avere%20informazioni" class="final-cta__button">Scrivimi su WhatsApp</a>
+      <div class="section-container final-cta__container reveal reveal--scale" data-tilt>
+        <p class="section-kicker">Contatti</p>
+        <h2>Hai un progetto, un'idea o un problema da risolvere?</h2>
+        <p>Raccontami la tua situazione e vediamo insieme quale soluzione può essere più adatta alle esigenze della tua attività.</p>
+        <div class="final-cta__actions">
+          <a href="https://wa.me/393491954793?text=Ciao%20vorrei%20avere%20informazioni" class="button button--primary" target="_blank" rel="noopener noreferrer">Scrivimi su WhatsApp</a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=emanuelescanta.business@gmail.com&su=Richiesta%20informazioni%20-%20Webora&body=Ciao%20Emanuele%2C%0A%0Avorrei%20avere%20informazioni%20su..." class="button button--secondary" target="_blank" rel="noopener noreferrer">Scrivimi via Email</a>
+        </div>
       </div>
     </section>
   </main>
@@ -466,70 +327,28 @@
   <footer class="site-footer">
     <div class="site-footer__container">
       <div class="site-footer__brand">
-        <span>Webora</span>
-        <span>Sviluppatore Freelance</span>
-        <span>Siti Web • Applicazioni • Soluzioni Digitali</span>
+        <a href="#" class="site-header__logo">
+          <span class="site-header__mark">W</span>
+          <span>Webora</span>
+        </a>
+        <p>Sviluppatore Freelance<br />Siti Web • Applicazioni • Soluzioni Digitali</p>
       </div>
-      <nav class="site-footer__nav">
-  <div class="site-footer__group">
-    <span class="site-footer__heading">CONTATTI</span>
-
-    <ul class="site-footer__menu">
-      <li class="site-footer__menu-item">
-        <a
-          href="https://wa.me/393491954793?text=Ciao%20vorrei%20avere%20informazioni"
-          class="site-footer__menu-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          WhatsApp
-        </a>
-      </li>
-
-      <li class="site-footer__menu-item">
-        <a
-  href="https://mail.google.com/mail/?view=cm&fs=1&to=emanuelescanta.business@gmail.com&su=Richiesta%20informazioni%20-%20Webora&body=Ciao%20Emanuele%2C%0A%0Avorrei%20avere%20informazioni%20su..."
-  class="site-footer__menu-link"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Email
-</a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="site-footer__group">
-    <span class="site-footer__heading">PROFILI</span>
-
-    <ul class="site-footer__menu">
-      <li class="site-footer__menu-item">
-        <a
-          href="https://github.com/Capital-flowyield"
-          class="site-footer__menu-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
-      </li>
-
-      <li class="site-footer__menu-item">
-        <a
-          href="https://www.linkedin.com/in/emanuele-scantamburlo-22256b245"
-          class="site-footer__menu-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          LinkedIn
-        </a>
-      </li>
-    </ul>
-  </div>
-</nav>
+      <nav class="site-footer__nav" aria-label="Link footer">
+        <div>
+          <span class="site-footer__heading">CONTATTI</span>
+          <a href="https://wa.me/393491954793?text=Ciao%20vorrei%20avere%20informazioni" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=emanuelescanta.business@gmail.com&su=Richiesta%20informazioni%20-%20Webora&body=Ciao%20Emanuele%2C%0A%0Avorrei%20avere%20informazioni%20su..." target="_blank" rel="noopener noreferrer">Email</a>
+        </div>
+        <div>
+          <span class="site-footer__heading">PROFILI</span>
+          <a href="https://github.com/Capital-flowyield" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/emanuele-scantamburlo-22256b245" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </nav>
       <div class="site-footer__copyright">© 2026 Webora. Tutti i diritti riservati.</div>
     </div>
   </footer>
-  <script src="script.js"></script>
+
+  <script type="module" src="script.js"></script>
 </body>
 </html>

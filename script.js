@@ -9,11 +9,13 @@ initHeroScrollFade();
 loadFlowerScene();
 
 function initHeaderState() {
-  const header = document.querySelector('.site-header');
-  if (!header) return;
+  const headers = document.querySelectorAll('.site-header, .case-header');
+  if (!headers.length) return;
 
   const update = () => {
-    header.classList.toggle('is-scrolled', window.scrollY > 24);
+    headers.forEach((header) => {
+      header.classList.toggle('is-scrolled', window.scrollY > 24);
+    });
   };
 
   update();
