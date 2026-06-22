@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>La Femme | Caso Studio Webora</title>
-  <meta name="description" content="Caso studio Webora: restyling dimostrativo del sito La Femme, con miglioramento dell'identità visiva, della struttura, dei testi, dell'esperienza utente e del percorso verso il contatto." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+
+  <meta
+    name="description"
+    content="Caso studio Webora: restyling dimostrativo del sito La Femme, con miglioramento dell'identità visiva, della struttura, dei testi, dell'esperienza utente e del percorso verso il contatto."
+  >
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="case-page">
-  <div class="site-noise" aria-hidden="true"></div>
-  <canvas id="particle-canvas" class="particle-canvas" aria-hidden="true"></canvas>
-
-  <header class="case-header" data-glass>
+<body>
+  <header class="case-header">
     <div class="case-header__container">
-      <a href="index.html" class="case-header__logo" aria-label="Torna alla home Webora">
-        <span class="site-header__mark">W</span>
-        <span>Webora</span>
-      </a>
+      <a href="index.html" class="case-header__logo">Webora</a>
 
       <a href="index.html#progetti" class="case-header__back">
         Torna ai progetti
@@ -29,11 +26,10 @@
   </header>
 
   <main>
-    <section class="case-showcase case-showcase--lafemme">
-      <div class="case-showcase__halo" aria-hidden="true"></div>
+    <!-- INTRO + PRIMA / DOPO -->
+    <section class="case-showcase">
       <div class="case-showcase__container">
-        <div class="case-showcase__header reveal reveal--up">
-          <p class="section-kicker">Caso studio • Beauty</p>
+        <div class="case-showcase__header">
           <h1>
             La Femme: da presenza online poco valorizzata a esperienza più elegante,
             chiara e orientata al contatto.
@@ -47,7 +43,7 @@
         </div>
 
         <div class="case-comparison__grid">
-          <article class="case-media-card reveal reveal--from-left" data-tilt>
+          <article class="case-media-card">
             <span class="case-media-card__label">Prima</span>
 
             <video
@@ -57,10 +53,8 @@
               loop
               playsinline
               controls
-              preload="metadata"
-              poster="./IMMAGINI/la-femme.png"
             >
-              <source src="./videos/la-femme-prima.mp4" type="video/mp4" />
+              <source src="videos/la-femme-prima.mp4" type="video/mp4">
               Il tuo browser non supporta il video.
             </video>
 
@@ -70,7 +64,7 @@
             </p>
           </article>
 
-          <article class="case-media-card case-media-card--featured reveal reveal--from-right" data-tilt>
+          <article class="case-media-card case-media-card--featured">
             <span class="case-media-card__label">Dopo</span>
 
             <video
@@ -80,10 +74,8 @@
               loop
               playsinline
               controls
-              preload="metadata"
-              poster="./IMMAGINI/la-femme.png"
             >
-              <source src="./videos/la-femme-dopo.mp4" type="video/mp4" />
+              <source src="videos/la-femme-dopo.mp4" type="video/mp4">
               Il tuo browser non supporta il video.
             </video>
 
@@ -96,9 +88,10 @@
       </div>
     </section>
 
+    <!-- RACCONTO DEL PROGETTO -->
     <section class="case-story">
       <div class="case-story__container">
-        <div class="case-story__header reveal reveal--up">
+        <div class="case-story__header">
           <span>Il lavoro svolto</span>
 
           <h2>Non solo estetica: il sito deve trasmettere fiducia e rendere semplice il contatto.</h2>
@@ -111,7 +104,7 @@
         </div>
 
         <div class="case-story__layout">
-          <article class="case-story__main reveal reveal--from-left" data-tilt>
+          <article class="case-story__main">
             <span class="case-story__label">Il problema</span>
 
             <h3>Il sito precedente non valorizzava abbastanza identità, servizi e percorso utente.</h3>
@@ -136,7 +129,7 @@
           </article>
 
           <div class="case-story__side">
-            <article class="case-story__card reveal reveal--from-right" data-tilt>
+            <article class="case-story__card">
               <span>01</span>
               <h3>Identità più curata</h3>
               <p>
@@ -145,7 +138,7 @@
               </p>
             </article>
 
-            <article class="case-story__card reveal reveal--from-right" data-tilt>
+            <article class="case-story__card">
               <span>02</span>
               <h3>Servizi più chiari</h3>
               <p>
@@ -154,7 +147,7 @@
               </p>
             </article>
 
-            <article class="case-story__card reveal reveal--from-right" data-tilt>
+            <article class="case-story__card">
               <span>03</span>
               <h3>Percorso più semplice</h3>
               <p>
@@ -165,7 +158,7 @@
           </div>
         </div>
 
-        <div class="case-story__result reveal reveal--scale" data-tilt>
+        <div class="case-story__result">
           <span>Il risultato</span>
 
           <h3>
@@ -182,8 +175,9 @@
       </div>
     </section>
 
+    <!-- CTA FINALE -->
     <section class="case-final-cta">
-      <div class="case-final-cta__container reveal reveal--up">
+      <div class="case-final-cta__container">
         <h2>Vuoi migliorare anche il sito della tua attività?</h2>
 
         <p>
@@ -193,7 +187,7 @@
 
         <a
           href="https://wa.me/393491954793?text=Ciao%20vorrei%20avere%20informazioni"
-          class="button button--primary"
+          class="case-button"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -202,6 +196,5 @@
       </div>
     </section>
   </main>
-  <script type="module" src="script.js"></script>
 </body>
 </html>
